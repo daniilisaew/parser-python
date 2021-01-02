@@ -14,14 +14,13 @@ def parse():
 
 
     for item in items:
-#Error
+
         courses.append({
                 'title': item.find('h3').text,
                 'url': URL + item.get('href')
             })
-        print(courses)
-        for course in courses:
+    for course in courses:
 
-            print(course['title'], course['url'])
+        print(course['title'], course['url'])
 parse()
 
